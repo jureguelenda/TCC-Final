@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7igDtdsVnnQIg1s3oOfEDR/S91oJ3RI3ZIYgpkCZS+9V82OKRuZtqqK4c8kDEkFBtwEipXoSJsB1R5y36E7iqg==",
+  "dgSpecHash": "/EVMLKKWgLHzHeVMeAKJ9JmIWwtBDE0r+xuSk0ISUwmGXeg2aW5JEuWOcSwYoRdN6pD71CbTZg6Z2KUukk6tnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\android\\Desktop\\TCC-2.0\\TCC-2.0\\TCC-2.0.csproj",
+  "projectFilePath": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\TCC-2.0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\android\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\android\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

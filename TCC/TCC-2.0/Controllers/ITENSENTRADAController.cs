@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using TCC_2._0.Data;
 using TCC_2._0.Models;
 
+
 namespace TCC_2._0.Controllers
 {
 
@@ -26,8 +27,6 @@ namespace TCC_2._0.Controllers
 
         public ActionResult Index()
         {
-
-
 
             ViewBag.entra = bd.ENTRADA.ToList();
             ViewBag.tipo = bd.PROTIPO.ToList();
@@ -50,17 +49,40 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Criar(int protipo,int entrada, int qtd, decimal preco)
+        public ActionResult Criar(int protipo,int entrada, int qtd, decimal preco) //int estoque)
         {
+
+           //PROTIPO novoestoque = new PROTIPO();
+          
             ITENSENTRADA novoitensentrada = new ITENSENTRADA();
+
+            //novoitensentrada.ITEQUANTIDADE = esto.PTESTOQUE;
 
             novoitensentrada.PTID = protipo;
             novoitensentrada.ENTID = entrada;
             novoitensentrada.ITEQUANTIDADE = qtd;
             novoitensentrada.ITEPRECO = preco;
-          
 
             
+            if (novoitensentrada.ITEQUANTIDADE != 0)
+            {
+                //novoitensentrada.ITEQUANTIDADE=qtd
+            }
+
+
+
+
+
+
+            //novoestoque = qtd + novoitensentrada.PROTIPO.PTESTOQUE;
+
+
+            //novoitensentrada.PROTIPO.PTESTOQUE += qtd;
+            int estoque = 0;
+            
+
+            int novoestoque = estoque + qtd;
+          
 
             bd.ITENSENTRADA.Add(novoitensentrada);
             bd.SaveChanges();

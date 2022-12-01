@@ -44,7 +44,7 @@ namespace TCC_2._0.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult> CriarAsync(int produto, int tipo, string maximo, string minimo, string estoque, IFormFile imagem)
+        public async Task<ActionResult> CriarAsync(int produto, int tipo, string maximo, string minimo, int estoque, IFormFile imagem)
         {
             PROTIPO novoproduto = new PROTIPO();
 
@@ -52,7 +52,7 @@ namespace TCC_2._0.Controllers
             novoproduto.TIPID = tipo;
             novoproduto.PTMAXIMO = Convert.ToInt32(maximo);
             novoproduto.PTMINIMO = Convert.ToInt32(minimo);
-            novoproduto.PTESTOQUE = Convert.ToInt32(estoque);
+            novoproduto.PTESTOQUE = estoque;
             
             if (imagem != null)
             {
@@ -81,14 +81,14 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Editar(int? id, int produto, int tipo, string maximo, string minimo, string estoque)
+        public ActionResult Editar(int? id, int produto, int tipo, string maximo, string minimo, int estoque)
         {
             PROTIPO proatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
             proatualizar.PROID = produto;
             proatualizar.TIPID = tipo;
             proatualizar.PTMAXIMO = Convert.ToInt32(maximo);
             proatualizar.PTMINIMO = Convert.ToInt32(minimo);
-            proatualizar.PTESTOQUE = Convert.ToInt32(estoque);
+            proatualizar.PTESTOQUE = estoque;
 
 
             bd.Entry(proatualizar).State = EntityState.Modified;
@@ -138,10 +138,10 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Atualizar(int? id,string estoque)
+        public ActionResult Atualizar(int? id,int estoque)
         {
             PROTIPO pteatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
-            pteatualizar.PTESTOQUE = Convert.ToInt32(estoque);
+            pteatualizar.PTESTOQUE = estoque;
 
 
             bd.Entry(pteatualizar).State = EntityState.Modified;
@@ -150,5 +150,39 @@ namespace TCC_2._0.Controllers
             return RedirectToAction("Index");
 
         }
+
+
+        public ActionResult EntradaEstoque()
+        {
+            ViewBag.attip = bd.TIPO.ToList();
+            ViewBag.atpro = bd.PRODUTO.ToList();
+            return View(bd.PROTIPO.ToList());
+        }
+
+
+        [HttpGet]
+        public ActionResult Estoque(int? id)
+        {
+            ViewBag.listaTip = bd.TIPO.ToList();
+            ViewBag.listaProdut = bd.PRODUTO.ToList();
+            PROTIPO ptelocalizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
+            return View(ptelocalizar);
+        }
+
+        [HttpPost]
+        public ActionResult Estoque(int? id, int qtd)
+        {
+            PROTIPO pteatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
+            var estoque = pteatualizar.PTESTOQUE;
+            pteatualizar.PTESTOQUE = estoque + qtd;
+
+
+            bd.Entry(pteatualizar).State = EntityState.Modified;
+
+            bd.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
     }
 }
