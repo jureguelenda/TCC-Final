@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PIqRb9EqgGgalHtpsSUr5U9wiSR24gYVx4VmECH6zyE=",
+  "Hash": "m8it+KbTLSvpCTNT3YdbNKWdEqiMmhkFC2G8CpUP/bg=",
   "Source": "TCC-2.0",
   "BasePath": "_content/TCC-2.0",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TCC-2.0.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\BemV.css",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "css/BemV.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\BemV.css"
+    },
+    {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\BemVindo.css",
       "SourceId": "TCC-2.0",
       "SourceType": "Discovered",
@@ -1105,12 +1122,12 @@
       "OriginalItemSpec": "wwwroot\\css\\Black.png"
     },
     {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\CRUD2.css",
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\B-V.css",
       "SourceId": "TCC-2.0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
       "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/CRUD2.css",
+      "RelativePath": "css/B-V.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,7 +1136,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\CRUD2.css"
+      "OriginalItemSpec": "wwwroot\\css\\B-V.css"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\CRUD.css",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "css/CRUD.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\CRUD.css"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\JD-Bebidas-Logo.jpg",
@@ -1156,12 +1190,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\telaL.css",
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\telaLogin.css",
       "SourceId": "TCC-2.0",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
       "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/telaL.css",
+      "RelativePath": "css/telaLogin.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1170,24 +1204,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\telaL.css"
-    },
-    {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\Tlogin.css",
-      "SourceId": "TCC-2.0",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
-      "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/Tlogin.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Tlogin.css"
+      "OriginalItemSpec": "wwwroot\\css\\telaLogin.css"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\favicon.ico",
@@ -1205,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\js\\hamburguer.js",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "js/hamburguer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\hamburguer.js"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\js\\site.js",
