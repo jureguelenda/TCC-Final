@@ -1,0 +1,60 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.descricao-delete {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    display: flex;
+}
+
+
+
+.edite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.descricao-edit {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.descricao-create {
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*metodos acima foram usados em "venda","compra" e "tipo" no projeto*/

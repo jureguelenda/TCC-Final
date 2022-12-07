@@ -5,58 +5,46 @@
     ViewBag.Title = "Alerta";
 }
 
-<link href="~/css/CRUD.css" rel="stylesheet"/>
+<link href="~/css/alerta.css" rel="stylesheet"/>
 
 <body class="fundo">
-  <div class="fundo-alerta">
-      <h2>Atualizar Estoque</h2>
+    <div class="alerta">
+          <div class="fundo-alerta">
+        <h2>Produtos Com Estoque Baixo</h2>
 
-   
-    <div>
-          
-                @foreach (var item in Model)
-                {
+      <div>         
+          @foreach (var item in Model)
+            {
+                @if (item.PTESTOQUE < item.PTMINIMO)
+             {
 
-              
-                        @if (item.PTESTOQUE < item.PTMINIMO)
-                        {
-
-                            <a href="/ProTipo/Atualizar?id=@item.PTID"  type="button">
-                                <div
-                                style="  background-color: darkred;
-                                        height: 100px;
-                                        width: 150px;
-                                        border-radius: 5px;
-                                        border:solid black;
-                                        display: inline-block;
+                        
+                <div
+                 style="  background-color: darkred;
+                          height: 100px;
+                          width: 150px;
+                          border-radius: 5px;
+                          border:solid black;
+                          display: inline-block;
                                       
-                                        vertical-align: central;
-                                        color: white">
+                          vertical-align: central;
+                          color: white">
 
-                                    <div>
-                                           <label>Em Estoque: @item.PTESTOQUE </label>
-                                           <label>Produto: @item.PRODUTO.PRODESCRICAO</label><br/>
-                                           <label>Tipo: @item.TIPO.TIPNOME</label>
-                                    </div>
-                                </div>
-                            </a>
-                        }
-                }
+                <div>                   
+                    <label>Produto: @item.PRODUTO.PRODESCRICAO @item.TIPO.TIPNOME</label><br/>
+                    <label>Em Estoque: @item.PTESTOQUE </label>
+                </div>
+
+              </div>
+                          
+           }
+         }
     </div>
 
-
-
-
-
-
-
-
-    <p><a href="/home/projetos" class="btn btn-primary">Voltar &raquo;</a></p>
+    <p><a href="/ProTipo/SaidaEstoque" class="btn btn-primary">Entrar &raquo;</a></p>
   </div>
-
-    
+    </div>
  
-
 </body>
 
 

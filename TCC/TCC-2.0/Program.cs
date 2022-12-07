@@ -41,7 +41,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=index}/{id?}");
+    pattern: "{controller=ProTipo}/{action=Alerta}/{id?}");
 app.MapRazorPages();
 
 app.Run();

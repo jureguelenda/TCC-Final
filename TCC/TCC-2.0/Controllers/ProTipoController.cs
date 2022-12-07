@@ -32,6 +32,16 @@ namespace TCC_2._0.Controllers
             return View(bd.PROTIPO.ToList());
         }
 
+        public ActionResult AvisoS()
+        {
+            return View();
+        }
+
+        public ActionResult AvisoE()
+        {
+            return View();
+        }
+
 
         [HttpGet]
         public ActionResult Criar()
@@ -128,28 +138,7 @@ namespace TCC_2._0.Controllers
         }
 
 
-        [HttpGet]
-        public ActionResult Atualizar(int? id)
-        {
-            ViewBag.listaTip = bd.TIPO.ToList();
-            ViewBag.listaProdut = bd.PRODUTO.ToList();
-            PROTIPO ptlocalizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
-            return View(ptlocalizar);
-        }
-
-        [HttpPost]
-        public ActionResult Atualizar(int? id,int estoque)
-        {
-            PROTIPO pteatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
-            pteatualizar.PTESTOQUE = estoque;
-
-
-            bd.Entry(pteatualizar).State = EntityState.Modified;
-
-            bd.SaveChanges();
-            return RedirectToAction("Index");
-
-        }
+        
 
 
         public ActionResult EntradaEstoque()
@@ -159,9 +148,15 @@ namespace TCC_2._0.Controllers
             return View(bd.PROTIPO.ToList());
         }
 
+        public ActionResult SaidaEstoque()
+        {
+            ViewBag.attip = bd.TIPO.ToList();
+            ViewBag.atpro = bd.PRODUTO.ToList();
+            return View(bd.PROTIPO.ToList());
+        }
 
         [HttpGet]
-        public ActionResult Estoque(int? id)
+        public ActionResult AtualizarEstoque(int? id)
         {
             ViewBag.listaTip = bd.TIPO.ToList();
             ViewBag.listaProdut = bd.PRODUTO.ToList();
@@ -170,7 +165,7 @@ namespace TCC_2._0.Controllers
         }
 
         [HttpPost]
-        public ActionResult Estoque(int? id, int qtd)
+        public ActionResult AtualizarEstoque(int? id, int qtd)
         {
             PROTIPO pteatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
             var estoque = pteatualizar.PTESTOQUE;
@@ -180,6 +175,38 @@ namespace TCC_2._0.Controllers
             bd.Entry(pteatualizar).State = EntityState.Modified;
 
             bd.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
+        public ActionResult RetirarEstoque(int? id)
+        {
+            ViewBag.listaTip = bd.TIPO.ToList();
+            ViewBag.listaProdut = bd.PRODUTO.ToList();
+            PROTIPO ptelocalizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
+            return View(ptelocalizar);
+        }
+
+        [HttpPost]
+        public ActionResult RetirarEstoque(int? id, int qtd)
+        {
+            PROTIPO pteatualizar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
+            var estoque = pteatualizar.PTESTOQUE;
+            pteatualizar.PTESTOQUE = estoque - qtd;
+
+
+            
+
+            try
+            {
+                bd.Entry(pteatualizar).State = EntityState.Modified;
+                bd.SaveChanges();
+            }
+            catch
+            {
+                return RedirectToAction("AvisoS");
+            }
+
             return RedirectToAction("Index");
 
         }

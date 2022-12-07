@@ -4,11 +4,17 @@
     ViewBag.Title = "Deletar";
 }
 
-<h2>Deletando</h2>
+<link href="~/css/funcaoCrud.css" rel="stylesheet"/>
 
-<div>
+
+<div class="delete">
     <form action="/Tipo/ConfirmeDelete?id=@Model.TIPID" method="post">
         <div>
+             <h2>Deletando o Intem</h2>
+        </div>
+                      <br />
+
+        <div class="descricao-delete">
             <class ="form-group">
                 <label>Descrição</label>
                 <label>@Model.TIPNOME</label>
@@ -18,7 +24,7 @@
 
         <br />
 
-        <div>
+        <div class="btn-delete">
             <p><a href="/Tipo/index" class="btn btn-primary">Voltar &raquo;</a></p>
             <button type="submit" class="btn btn-danger">Deletar</button>
         </div>
