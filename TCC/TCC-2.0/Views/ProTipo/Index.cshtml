@@ -5,23 +5,23 @@
     ViewBag.Title = "Index";
 }
 
-<link href="~/css/tblCrud.css" rel="stylesheet"/>
+<link href="~/css/pgCrud.css" rel="stylesheet"/>
 
 <body class="fundo">
 
     <h2>Produtos no Estoque</h2>
 
     <p><a class="btn btn-info" href="/ProTipo/Criar">Criar novo Produto no Estoque</a></p>
-    <div class="container-fluid">
+    <div>
 
 
         <table class="table" id="table-Estoque">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Produto</th>
+                    <th scope="col">Produto</th>@*
                     <th scope="col">Tipo</th>
-                    <th scope="col">Max</th>
+                    <th scope="col">Max</th>*@
                     <th scope="col">Min</th>
                     <th scope="col">Estoque</th>
                     <th scope="col">Imagem</th>
@@ -35,9 +35,9 @@
 
                     <tr>
                         <td scope="row">@item.PTID</td>
-                        <td>@item.PRODUTO.PRODESCRICAO</td>
-                        <td> @item.TIPO.TIPNOME</td>                    
-                        <td> @item.PTMAXIMO</td>
+                        <td>@item.PRODUTO.PRODESCRICAO: @item.TIPO.TIPNOME</td>
+                        @*<td> @item.TIPO.TIPNOME</td>                 
+                        <td> @item.PTMAXIMO</td>*@
                         <td> @item.PTMINIMO</td>
 
 
@@ -84,20 +84,10 @@
                     </tr>
                 }
 
-
-
-
             </tbody>
         </table>
 
-
     </div>
-
-
-
-
-
-
 
 
     <p><a href="/ProTipo/Alerta" class="btn btn-primary">Voltar &raquo;</a></p>

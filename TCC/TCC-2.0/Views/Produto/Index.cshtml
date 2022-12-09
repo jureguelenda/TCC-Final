@@ -5,7 +5,7 @@
     ViewBag.Title = "Index";
 }
 
-<link href="~/css/tblCrud.css" rel="stylesheet"/>
+<link href="~/css/pgCrud.css" rel="stylesheet"/>
 
 <body class="fundo">
 
@@ -16,8 +16,8 @@
         <thead class="thead-dark">
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Categoria</th>
+                <th scope="col">Descrição</th>@*
+                <th scope="col">Categoria</th>*@
                 <th scope="col">Imagem </th>
                 <th scope="col">Opções</th>
             </tr>
@@ -28,8 +28,8 @@
 
                 <tr>
                     <td scope="row">@item.PROID</td>
-                    <td>@item.PRODESCRICAO</td>
-                    <td><option value="@item.CATID">@item.CATEGORIA.CATDESCRICAO</option></td>
+                    <td>@item.PRODESCRICAO: @item.CATEGORIA.CATDESCRICAO</td>
+                    
                     <td>
                         @{
                             if (item.PROIMAGEM != null)
@@ -43,11 +43,6 @@
 
                     </td>
 
-
-
-
-
-
                     <td>
 
                         <a href="/produto/editar?id=@item.PROID"><button type="button" class="btn btn-warning">Editar</button></a>
@@ -56,9 +51,6 @@
                     </td>
                 </tr>
             }
-
-
-
 
         </tbody>
     </table>

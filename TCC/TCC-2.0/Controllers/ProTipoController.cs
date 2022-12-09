@@ -112,6 +112,8 @@ namespace TCC_2._0.Controllers
         [HttpGet]
         public ActionResult Deletar(int? id)
         {
+            ViewBag.tipos = bd.TIPO.ToList();
+            ViewBag.dp = bd.PRODUTO.ToList();
             PROTIPO proDeletar = bd.PROTIPO.ToList().Where(x => x.PTID == id).First();
             return View(proDeletar);
         }

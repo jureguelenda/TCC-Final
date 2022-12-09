@@ -4,43 +4,63 @@
     ViewBag.Title = "Deletar";
 }
 
-<link href="~/css/pgalerta.css" rel="stylesheet"/>
+<link href="~/css/funcaoCrud.css" rel="stylesheet"/>
 
-<h1>Deletando</h1>
 
-<div>
+<div class="tudo">
     <form action="/ProTipo/ConfirmeDelete?id=@Model.PTID" method="post">
-        <div class="descricao-delete">
-            <class ="form-group">
-                <h5>Produto</h5>
-                <label><@Model.PROID"</label>
+        <div>
+            <h1>Deletando</h1>
+            <br />
+            <h5>Produto</h5>
         </div>
+        <div class="descricao-delete">
+            
+            <class ="form-group">
+                
+                <label> @Model.PRODUTO.PRODESCRICAO: @Model.TIPO.TIPNOME </label>
+        </div>
+         <br />
+
+         @*<div>
+             <h5>Tipo</h5>
+         </div>
 
         <div class="descricao-delete">
             <class ="form-group">
-                <h5>Tipo</label>
-                <label>@Model.TIPID</label>
+                
+                <label>@Model.TIPO.TIPNOME</label>
         </div>
+         <br />*@
+
+         <div>
+             <h5>Mínimo</h5>
+         </div>
 
         <div class="descricao-delete">
             <class ="form-group">
-                <h5>Mínimo</label>
-                <label>@Model.PTMAXIMO</label>
-        </div>
-
-        <div class="descricao-delete">
-            <class ="form-group">
-                <h5>Máximo</label>
+                
                 <label>@Model.PTMINIMO</label>
         </div>
+         <br />
+
+         <div>
+             <h5>Estoque</h5>
+         </div>
+        @*<div class="descricao-delete">
+            <class ="form-group">
+                <h5>Máximo</label>
+                <label>@Model.</label>
+        </div>*@
 
         <div class="descricao-delete">
             <class ="form-group">
-                <h5>Estoque</label>
+                
                 <label>@Model.PTESTOQUE</label>
         </div>
+         <br />
 
-        <div class="descricao-delete">
+        <div>
             <p><a href="/protipo/index" class="btn btn-primary">Voltar &raquo;</a></p>
             <button type="submit" class="btn btn-danger">Deletar</button>
         </div>

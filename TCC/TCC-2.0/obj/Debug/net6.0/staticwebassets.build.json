@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zWELRroEPosLPpgvuMF4qy74ZuYJAWt/Zr17hXpfk1c=",
+  "Hash": "O7joxqXRehEBacIATv6vQt2uMYdFlxoEBjwvoGI8/CY=",
   "Source": "TCC-2.0",
   "BasePath": "_content/TCC-2.0",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\pgalerta.css"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\pgCrud.css",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "css/pgCrud.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pgCrud.css"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\site.css",
