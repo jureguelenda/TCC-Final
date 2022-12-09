@@ -5,16 +5,16 @@
     ViewBag.Title = "Editar";
 }
 
-<h2>Editando</h2>
+<link href="~/css/pgalerta.css" rel="stylesheet"/>
 
-<div>
+<h1>Editando</h1>
+
+<div >
     <form action="/ProTipo/Editar?id=@Model.PTID" method="post">
 
 
-
-
         <div>
-            <label for="produto">Produto: </label>
+            <h5>Produto: </h5>
             <select type="text" class="form-control" id="produto" name="produto">
 
                 @foreach (var item in ViewBag.listaProduto)
@@ -27,7 +27,7 @@
         </div>
 
         <div>
-            <label for="tipo">Tipo: </label>
+            <h5>Tipo: </h5>
             <select type="text" class="form-control" id="tipo" name="tipo">
 
                 @foreach (var item in ViewBag.listaTipo)
@@ -41,7 +41,7 @@
 
         <div>
             <class ="form-group">
-                <label for="maximo">Máximo</label>
+                <h5>Máximo</h5>
                 <input type="number" class="form-control"
                        id="maximo" name="maximo" min="0"
                        value="@Model.PTMAXIMO"
@@ -51,7 +51,7 @@
 
         <div>
             <class ="form-group">
-                <label for="minimo">Mínimo</label>
+                <h5>Mínimo</h5>
                 <input type="number" class="form-control"
                        id="minimo" name="minimo" min="0"
                        value="@Model.PTMINIMO"
@@ -61,7 +61,7 @@
 
         <div>
             <class ="form-group">
-                <label for="estoque">Estoque</label>
+                <h5>Estoque</h5>
                 <input type="number" class="form-control"
                        id="estoque" name="estoque" min="0"
                        value="@Model.PTESTOQUE"
@@ -69,7 +69,7 @@
         </div>
 
         <div class="form-group">
-            <label for="arquivo">Imagem</label>
+            <h5>Imagem</h5>
             <input type="file" class="form-control"
                    id="imagem" name="imagem" re />
         </div>

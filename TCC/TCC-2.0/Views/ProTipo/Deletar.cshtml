@@ -4,44 +4,43 @@
     ViewBag.Title = "Deletar";
 }
 
-<h2>Deletando</h2>
+<link href="~/css/pgalerta.css" rel="stylesheet"/>
+
+<h1>Deletando</h1>
 
 <div>
     <form action="/ProTipo/ConfirmeDelete?id=@Model.PTID" method="post">
-        <div>
+        <div class="descricao-delete">
             <class ="form-group">
-                <label>Produto</label>
+                <h5>Produto</h5>
                 <label><@Model.PROID"</label>
         </div>
 
-        <div>
+        <div class="descricao-delete">
             <class ="form-group">
-                <label>Tipo</label>
+                <h5>Tipo</label>
                 <label>@Model.TIPID</label>
         </div>
-        <div>
+
+        <div class="descricao-delete">
             <class ="form-group">
-                <label>Mínimo</label>
+                <h5>Mínimo</label>
                 <label>@Model.PTMAXIMO</label>
         </div>
-        <div>
+
+        <div class="descricao-delete">
             <class ="form-group">
-                <label>Máximo</label>
+                <h5>Máximo</label>
                 <label>@Model.PTMINIMO</label>
         </div>
-        <div>
+
+        <div class="descricao-delete">
             <class ="form-group">
-                <label>Estoque</label>
+                <h5>Estoque</label>
                 <label>@Model.PTESTOQUE</label>
         </div>
 
-
-        <div>
-
-
-        </div>
-
-        <div>
+        <div class="descricao-delete">
             <p><a href="/protipo/index" class="btn btn-primary">Voltar &raquo;</a></p>
             <button type="submit" class="btn btn-danger">Deletar</button>
         </div>

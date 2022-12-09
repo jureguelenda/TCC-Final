@@ -31,6 +31,11 @@ namespace TCC_2._0.Controllers
             return View();
         }
 
+        public ActionResult AvisoD()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Criar(string descricao)
         {
@@ -87,7 +92,7 @@ namespace TCC_2._0.Controllers
             }
             catch
             {
-                return RedirectToAction("/Home/Erro");
+                return RedirectToAction("AvisoD");
             }
 
 

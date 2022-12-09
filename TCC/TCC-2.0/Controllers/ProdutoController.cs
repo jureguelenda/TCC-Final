@@ -35,6 +35,11 @@ namespace TCC_2._0.Controllers
             return View();
         }
 
+        public ActionResult AvisoD()
+        {
+            return View();
+        }
+
         [HttpPost]
         public async Task<ActionResult> Criar(string descricao, int categoria, IFormFile imagem)
         {
@@ -103,7 +108,7 @@ namespace TCC_2._0.Controllers
             }
             catch
             {
-                return RedirectToAction("/Home/Erro");
+                return RedirectToAction("AvisoD");
             }
 
 

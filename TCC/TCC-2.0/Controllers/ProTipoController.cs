@@ -175,7 +175,7 @@ namespace TCC_2._0.Controllers
             bd.Entry(pteatualizar).State = EntityState.Modified;
 
             bd.SaveChanges();
-            return RedirectToAction("Index");
+             return RedirectToAction("Alerta");
 
         }
 
@@ -207,7 +207,7 @@ namespace TCC_2._0.Controllers
                 return RedirectToAction("AvisoS");
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Alerta");
 
         }
 

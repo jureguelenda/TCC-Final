@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ncEq2ZQaStKpI+/Tt6DnwGGcDKMw8iyipCL92RUpotY=",
+  "Hash": "zWELRroEPosLPpgvuMF4qy74ZuYJAWt/Zr17hXpfk1c=",
   "Source": "TCC-2.0",
   "BasePath": "_content/TCC-2.0",
   "Mode": "Default",
@@ -1071,40 +1071,6 @@
       "OriginalItemSpec": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TCC-2.0.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\alerta.css",
-      "SourceId": "TCC-2.0",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
-      "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/alerta.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\alerta.css"
-    },
-    {
-      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\Black.png",
-      "SourceId": "TCC-2.0",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
-      "BasePath": "_content/TCC-2.0",
-      "RelativePath": "css/Black.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Black.png"
-    },
-    {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\funcaoCrud.css",
       "SourceId": "TCC-2.0",
       "SourceType": "Discovered",
@@ -1154,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\JD-Bebidas-Logo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\pgalerta.css",
+      "SourceId": "TCC-2.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\",
+      "BasePath": "_content/TCC-2.0",
+      "RelativePath": "css/pgalerta.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\pgalerta.css"
     },
     {
       "Identity": "C:\\Users\\android\\Desktop\\TCC-Final\\TCC\\TCC-2.0\\wwwroot\\css\\site.css",

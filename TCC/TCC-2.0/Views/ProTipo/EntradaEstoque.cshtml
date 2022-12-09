@@ -11,11 +11,9 @@
 
     <h2>Lista para Entrada de Produtos no Estoque</h2>
 
-    
     <div>
 
-
-        <table class="table">
+        <table class="table" id="table-Entrada">
             <thead class="thead-dark">
                 <tr>
                  
@@ -29,15 +27,10 @@
             <tbody class="teste">
                 @foreach (var item in Model)
                 {
-
                     <tr>
-                       
-                        <td>@item.PRODUTO.PRODESCRICAO @item.TIPO.TIPNOME</td>
-                                   
-
-
                       
-
+                        <td>@item.PRODUTO.PRODESCRICAO @item.TIPO.TIPNOME</td>
+                          
                         <td>
                             @{
                                 if (item.PTIMAGEM != null)
@@ -51,8 +44,6 @@
 
                         </td>
 
-
-
                         <td class="butoes">
 
                             <a href="/ProTipo/AtualizarEstoque?id=@item.PTID"><button type="button" class="btn btn-warning">Entrada</button></a>
@@ -62,21 +53,11 @@
                     </tr>
                 }
 
-
-
-
             </tbody>
         </table>
 
 
     </div>
-
-
-
-
-
-
-
 
     <p><a href="/ProTipo/Alerta" class="btn btn-primary">Voltar</a></p>
 
